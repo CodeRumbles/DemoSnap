@@ -1,2 +1,1 @@
-# DemoSnap
- 
+# camera_kit_demo
