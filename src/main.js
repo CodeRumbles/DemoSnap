@@ -20,6 +20,7 @@ import {
 	});
 
 	const source = createMediaStreamSource(mediaStream, {
+		//cameraType: 'front'
 		cameraType: 'back'
 	})
 
