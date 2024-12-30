@@ -26033,12 +26033,13 @@ console.info(`SDK: ${environment_namespaceObject.l} \
 	session.applyLens(lenses[1])
 	
 	let mediaStream = await navigator.mediaDevices.getUserMedia({video: 
-	//{ facingMode: 'environment' }
-	true
+	{ facingMode: 'environment' }
+	//true
 	});
 
 	const source = createMediaStreamSource(mediaStream, {
-		cameraType: 'front'
+		//cameraType: 'front'
+		cameraType: 'back'
 	})
 
 	await session.setSource(source)
@@ -26047,6 +26048,7 @@ console.info(`SDK: ${environment_namespaceObject.l} \
 
 	session.play()
 })();
+
 })();
 
 /******/ })()
